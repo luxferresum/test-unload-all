@@ -1,5 +1,4 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+Total: {{this.model.totalFoos}}
+<button onclick={{action "test"}}>Test</button>
+<button onclick={{action "unloadAll"}}>Unload all foos</button>
+<input oninput={{action (mut this.value) value="target.value"}}>
